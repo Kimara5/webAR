@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<!-- RESPONSIVE 
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"> -->
+<!-- <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script> -->
+<script src="libs/aframe-docs-v0.8.0/aframe-master.min.js"></script>
+<!--<script src="http://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.js"></script> -->
+<script src="libs/aframe-extras-4.1.2/aframe-extras.loaders.min.js"></script>
+<!-- <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script> -->
+<script src="libs/AR.js-master/aframe-ar.js"></script>
+<!-- LIBRERIA EVENTS ONLINE: <script src="https://rawgit.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/events.js"></script> -->
+<script src="libs/events/events.js"></script>
+
+<!-- ESTILOS -->
+<style>
+</style>
+
+<!-- BODY -->
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+    <!-- AUDIOS -->
+    <audio autoplay>
+        <source src="audios/SciFiAmbient.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- ESCENA Y CARGA DE MODELOS -->
+    <!--
+    <a-scene stats embedded arjs='debugUIEnabled: false;'>
+        <a-marker-camera markerhandler emitevents="true" cursor="rayOrigin: mouse" type='pattern' url='/pattern-movQR.patt' id="animated-marker">
+            <a-gltf-model src="/ModelosPruebas/3/PruebaAni.gltf" animation-mixer="clip: SubeBaja;" id="animated-model"></a-gltf-model>
+        </a-marker-camera>
+        <a-entity camera></a-entity>  
+    </a-scene>  
+    -->
+    
+    <a-scene stats embedded arjs='debugUIEnabled: false;'>
+        <a-marker-camera markerhandler emitevents="true" cursor="rayOrigin: mouse" type='pattern' url='/pattern-letterG.patt' id="animated-marker">
+            <a-gltf-model src="/ModelosPruebas/adamHead.gltf" id="animated-model"></a-gltf-model>
+        </a-marker-camera>
+        <a-entity camera></a-entity>  
+    </a-scene>
+    
+</body>
+
+        
